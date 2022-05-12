@@ -14,6 +14,7 @@ dotnet sln .\BasicApp.sln add .\BasicApp.ConsoleApp\
 
 ## Minikube CLI
 
+PS D:\src\github\BasicApp> 
 minikube image build .\BasicApp.ConsoleApp\ -t basic-app:1
 
 Run iteractive (and terminate when done with `--rm` flag)
@@ -36,3 +37,10 @@ minikube kubectl -- attach app1 -i -t
 Attache and spawn a shell
 minikube kubectl -- exec app1 --stdin --tty -- /bin/bash
 
+## IBMMQ branch
+
+This branch attempts to send messages to a IBM MQ.
+
+```ps1: In C:\src\github.com\ongzhixian\BasicApp
+dotnet add .\BasicApp.ConsoleApp\ package IBMXMSDotnetClient
+```
